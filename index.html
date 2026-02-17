@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+  <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin/>
+  <link href="https://api.fonts.coollabs.io/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+  <body>
+    <header class="bg-gray-950 px-8 py-2 mb-0 sticky top-0">
+      <div class="mx-auto max-7xl flex items-center gap-12">
+        <a class="text-3xl text-black bg-orange-500 text-center items-center flex h-18 w-18"
+           href="#main">
+          <p class="text-4xl bg-orange-400 rounded-bl-full h-16 w-16 items-center p-1 py-2">JRT
+            <span class="sr-only">Home</span>
+          </p>
+        </a>
+        <div class="flex flex-1 items-center justify-end md:justify-between">
+          <nav>
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-3xl text-shadow-fuchsia-500">
+                <li>
+                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
+                     href="#about">about</a>
+                </li>
+                <li>
+                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
+                     href="#projects">projects</a>
+                </li>
+                <li>
+                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
+                     href="#skills">skills</a>
+                </li>
+                <li>
+                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
+                     href="#contact">contact</a>
+                </li>
+              </ul>
+
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl space-y-16 bg-gray-500 min-h-screen
+             mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+      <section class="border border-gray-200 rounded-bl-xl shadow overflow-hidden">
+        <header class="bg-orange-400 text-black w-full">
+          <h1 class="text-3xl p-4">
+            James Raymond Thompson
+          </h1>
+        </header>
+        <article class="space-y-4 p-4">
+          <p>
+            welcome
+          </p>
+        </article>
+        <span id="about"></span>
+      </section>
+      <section class="border border-gray-200 rounded-bl-xl shadow overflow-hidden">
+        <header class="bg-orange-300 p-4 text-black w-full">
+          <h2>
+            Projects
+          </h2>
+        </header>
+        <div class="gap-4 p-4 grid grid-cols-3">
+          <!-- We add the projects here -->
+          <article class="group">
+            <!-- Screenshot/Illustration here -->
+            <img alt="Photo: Image of "
+                 aria-description="Photo https://jraymondt.com/assets/images/logo.svg"
+                 src="https://jraymondt.com/assets/images/logo.svg"
+                 class="h-56 w-full rounded-xl object-cover shadow transition group-hover:grayscale-80">
+            <div class="p-4">
+              <!-- title and one sentence description -->
+              <a href="#">
+                <h3 class="text-lg font-medium text-gray-900">Ducking</h3>
+              </a>
+
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-black">
+                A TailwindCSS tester.
+              </p>
+            </div>
+          </article>
+        </div>
+        <span id="projects"></span>
+      </section>
+      <section class="border border-gray-300 rounded-bl-xl drop-shadow-lg drop-shadow-slate-400 overflow-hidden">
+        <header class="bg-orange-200 p-4 text-black w-full">
+          <h3>
+           Contact
+          </h3>
+        </header>
+        <article class="space-y-4 p-4">
+          <div>
+            <a href="mailto:james@jraymondt.com">@jimbob</a>
+          </div>
+        </article>
+          <span id="contact"></span>
+      </section>
+      
+      <footer class="border border-gray-300 rounded-bl-xl drop-shadow-lg drop-shadow-slate-500 space-y-4 p-4">
+        James Raymond Thompson has Feet
+      </footer>
+    </main>
+
+
+<!--    <script type="module" src="/src/main.js"></script>-->
+  </body>
+</html>
