@@ -3,91 +3,74 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profile Page</title>
+  <title>James Raymond Thompson</title>
   <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin/>
   <link href="https://api.fonts.coollabs.io/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="src/style.css">
 </head>
   <body>
-    <header class="bg-gray-950 px-8 py-2 mb-0 sticky top-0">
-      <div class="mx-auto max-7xl flex items-center gap-12">
-        <a class="text-3xl text-black bg-orange-500 text-center items-center flex h-18 w-18"
-           href="#main">
-          <p class="text-4xl bg-orange-400 rounded-bl-full h-16 w-16 items-center p-1 py-2">JRT
-            <span class="sr-only">Home</span>
-          </p>
+    <header class="bg-gray-950 px-8 py-4 sticky top-0 z-50 shadow-xl">
+      <div class="mx-auto max-w-7xl flex items-center justify-between">
+        <a href="#main" class="flex items-center h-16 w-16 bg-orange-500 rounded-full shadow-lg hover:scale-105 transition">
+          <span class="text-2xl font-bold text-gray-950 mx-auto">JRT<span class="sr-only">Home</span></span>
         </a>
-        <div class="flex flex-1 items-center justify-end md:justify-between">
-          <nav>
-            <nav aria-label="Global" class="hidden md:block">
-              <ul class="flex items-center gap-6 text-3xl text-shadow-fuchsia-500">
-                <li>
-                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
-                     href="#about">about</a>
-                </li>
-                <li>
-                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
-                     href="#projects">projects</a>
-                </li>
-                <li>
-                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
-                     href="#skills">skills</a>
-                </li>
-                <li>
-                  <a class="text-fuchsia-300 transition hover:text-fuchsia-600"
-                     href="#contact">contact</a>
-                </li>
-              </ul>
-
-          </nav>
-        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <ul class="flex items-center gap-8 text-xl">
+            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#about">about</a></li>
+            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#projects">projects</a></li>
+            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#skills">skills</a></li>
+            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <!-- Mobile menu button (expand for full hamburger if needed) -->
+        <button class="md:hidden text-fuchsia-300 text-2xl">☰</button>
       </div>
     </header>
-
-    <main class="max-w-7xl space-y-16 bg-gray-500 min-h-screen
+    <main id="main" class="max-w-7xl space-y-16 bg-gray-500 min-h-screen
              mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
-      <section class="border border-gray-200 rounded-bl-xl shadow overflow-hidden">
-        <header class="bg-orange-400 text-black w-full">
-          <h1 class="text-3xl p-4">
-            James Raymond Thompson
+      <section class="border border-gray-400 rounded-bl-xl shadow-2xl overflow-hidden">
+        <header class="bg-orange-400 p-4 text-black w-full">
+          <h1>
+            James Raymond Thompson //webDeveloper
           </h1>
         </header>
-        <article class="space-y-4 p-4">
-          <p>
-            welcome
-          </p>
+        <article class="space-y-4 p-6 text-gray-900">
+          <p>Web Developer from Perth, Western Australia. Cert IV (2021) & Diploma FED (2025) BED in progress. Coding my zipples off!</p>
+          <p>Born '79, ex-cook/courier, now pushing creative web dev extremes through sieve whilst seeking employment. 🚀👾🌖</p>
         </article>
-        <span id="about"></span>
+        <span id="about" class="sr-only"></span>
       </section>
-      <section class="border border-gray-200 rounded-bl-xl shadow overflow-hidden">
+      <section class="border border-gray-200 rounded-bl-xl  shadow-2xl overflow-hidden">
         <header class="bg-orange-300 p-4 text-black w-full">
           <h2>
             Projects
           </h2>
         </header>
-        <div class="gap-4 p-4 grid grid-cols-3">
-          <!-- We add the projects here -->
-          <article class="group">
-            <!-- Screenshot/Illustration here -->
-            <img alt="Photo: Image of "
-                 aria-description="Photo https://jraymondt.com/assets/images/logo.svg"
-                 src="https://jraymondt.com/assets/images/logo.svg"
-                 class="h-56 w-full rounded-xl object-cover shadow transition group-hover:grayscale-80">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+          <article class="group border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+            <img src="https://jraymondt.com/assets/images/logo.svg" alt="Ducking project screenshot" class="h-48 w-full object-cover group-hover:grayscale transition">
             <div class="p-4">
-              <!-- title and one sentence description -->
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">Ducking</h3>
-              </a>
-
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-black">
-                A TailwindCSS tester.
-              </p>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Ducking</h3>
+              <p class="text-gray-600 text-sm">TailwindCSS tester project.</p>
+              <a href="#" class="mt-2 inline-block text-orange-500 font-medium hover:underline">View →</a>
             </div>
           </article>
+          <article class="group border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+            <div class="h-48 bg-linear-to-br from-gray-400 to-purple-500 flex items-center justify-center">
+              <span class="text-white font-bold">Papercup</span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Papercup</h3>
+              <p class="text-gray-600 text-sm">Laravel/Tailwind placeholder site.</p>
+              <a href="#" class="mt-2 inline-block text-orange-500 font-medium hover:underline">View →</a>
+            </div>
+          </article>
+          <!-- more please -->
         </div>
         <span id="projects"></span>
+
       </section>
-      <section class="border border-gray-300 rounded-bl-xl drop-shadow-lg drop-shadow-slate-400 overflow-hidden">
+      <section class="border border-gray-300 rounded-bl-xl  shadow-2xl drop-shadow-slate-400 overflow-hidden">
         <header class="bg-orange-200 p-4 text-black w-full">
           <h3>
            Contact
@@ -101,7 +84,7 @@
           <span id="contact"></span>
       </section>
       
-      <footer class="border border-gray-300 rounded-bl-xl drop-shadow-lg drop-shadow-slate-500 space-y-4 p-4">
+      <footer class="border border-gray-300 rounded-bl-xl shadow-2xl space-y-4 p-4">
         James Raymond Thompson has Feet
       </footer>
     </main>
