@@ -17,10 +17,26 @@
         </a>
         <nav class="hidden md:flex items-center gap-8">
           <ul class="flex items-center gap-8 text-xl">
-            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#about">about</a></li>
-            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#projects">projects</a></li>
-            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#skills">skills</a></li>
-            <li><a class="text-fuchsia-300 hover:text-fuchsia-500 transition-all duration-300" href="#contact">contact</a></li>
+            <li>
+              <a class="relative border-black bg-gray-950 px-5 py-3 font-semibold text-fuchsia-500 after:absolute after:inset-x-0 after:bottom-0 after:h-1 after:bg-black hover:text-fuchsia-300 hover:after:h-full focus:ring-2 focus:ring-fuchsia-500 focus:outline-0" href="#about">
+              <span class="relative z-10">About</span>
+              </a>
+            </li>
+            <li>
+              <a class="relative border-black bg-gray-950 px-5 py-3 font-semibold text-fuchsia-500 after:absolute after:inset-x-0 after:bottom-0 after:h-1 after:bg-black hover:text-fuchsia-300 hover:after:h-full focus:ring-2 focus:ring-fuchsia-500 focus:outline-0" href="#projects">
+              <span class="relative z-10">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a class="relative border-black bg-gray-950 px-5 py-3 font-semibold text-fuchsia-500 after:absolute after:inset-x-0 after:bottom-0 after:h-1 after:bg-black hover:text-fuchsia-300 hover:after:h-full focus:ring-2 focus:ring-fuchsia-500 focus:outline-0" href="#skills">
+              <span class="relative z-10">Skills</span>
+              </a>
+            </li>
+            <li>
+              <a class="relative border-black bg-gray-950 px-5 py-3 font-semibold text-fuchsia-500 after:absolute after:inset-x-0 after:bottom-0 after:h-1 after:bg-black hover:text-fuchsia-300 hover:after:h-full focus:ring-2 focus:ring-fuchsia-500 focus:outline-0" href="#contact">
+              <span class="relative z-10">Contact</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- Mobile menu button (expand for full hamburger if needed) -->
@@ -48,27 +64,57 @@
           </h2>
         </header>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-          <article class="group border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+          <article class="block border-2 border-black bg-white p-4 shadow-[4px_4px_0_0] hover:bg-yellow-100 focus:ring-2 focus:ring-yellow-300 focus:outline-0 sm:p-6">
             <img src="https://jraymondt.com/assets/images/logo.svg" alt="Ducking project screenshot" class="h-48 w-full object-cover group-hover:grayscale transition">
             <div class="p-4">
+              <span class="inline-flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                <path fill-rule="evenodd" d="M4 1.75a.75.75 0 0 1 1.5 0V3h5V1.75a.75.75 0 0 1 1.5 0V3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2V1.75ZM4.5 6a1 1 0 0 0-1 1v4.5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-7Z" clip-rule="evenodd"></path>
+              </svg>
+
+              <time datetime="2026-02-24" class="text-xs/none font-semibold uppercase">
+                February 24, 2026
+              </time>
+            </span>
               <h3 class="text-xl font-bold text-gray-900 mb-1">Ducking</h3>
+              
               <p class="text-gray-600 text-sm">TailwindCSS tester project.</p>
               <a href="#" class="mt-2 inline-block text-orange-500 font-medium hover:underline">View →</a>
             </div>
           </article>
-          <article class="group border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+          <article class="block border-2 border-black bg-white p-4 shadow-[4px_4px_0_0] hover:bg-yellow-100 focus:ring-2 focus:ring-yellow-300 focus:outline-0 sm:p-6">
             <img src="https://jraymondt.com/assets/images/logo.svg" alt="Ducking project screenshot" class="h-48 w-full object-cover group-hover:grayscale transition">
             <div class="p-4">
-              <h3 class="text-xl font-bold text-gray-900 mb-1">Whack a Mole</h3>
-              <p class="text-gray-600 text-sm">Laravel/Tailwind practice site.</p>
+              <span class="inline-flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                <path fill-rule="evenodd" d="M4 1.75a.75.75 0 0 1 1.5 0V3h5V1.75a.75.75 0 0 1 1.5 0V3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2V1.75ZM4.5 6a1 1 0 0 0-1 1v4.5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-7Z" clip-rule="evenodd"></path>
+              </svg>
+
+              <time datetime="2026-02-24" class="text-xs/none font-semibold uppercase">
+                February 24, 2026
+              </time>
+            </span>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Badgers Rift</h3>
+              
+              <p class="text-gray-600 text-sm">My Own outlet</p>
               <a href="#" class="mt-2 inline-block text-orange-500 font-medium hover:underline">View →</a>
             </div>
           </article>
-          <article class="group border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all bg-white">
+          <article class="block border-2 border-black bg-white p-4 shadow-[4px_4px_0_0] hover:bg-yellow-100 focus:ring-2 focus:ring-yellow-300 focus:outline-0 sm:p-6">
             <img src="https://jraymondt.com/assets/images/logo.svg" alt="Ducking project screenshot" class="h-48 w-full object-cover group-hover:grayscale transition">
             <div class="p-4">
-              <h3 class="text-xl font-bold text-gray-900 mb-1">Badgers a Drift</h3>
-              <p class="text-gray-600 text-sm">Astro practice site.</p>
+              <span class="inline-flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                <path fill-rule="evenodd" d="M4 1.75a.75.75 0 0 1 1.5 0V3h5V1.75a.75.75 0 0 1 1.5 0V3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2V1.75ZM4.5 6a1 1 0 0 0-1 1v4.5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-7Z" clip-rule="evenodd"></path>
+              </svg>
+
+              <time datetime="2026-02-24" class="text-xs/none font-semibold uppercase">
+                February 24, 2026
+              </time>
+            </span>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Laravel Project</h3>
+              
+              <p class="text-gray-600 text-sm">Lets go?</p>
               <a href="#" class="mt-2 inline-block text-orange-500 font-medium hover:underline">View →</a>
             </div>
           </article>
